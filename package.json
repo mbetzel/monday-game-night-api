@@ -1,0 +1,28 @@
+{
+  "name": "monday-game-night-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js"
+  },
+  "author": "Mike Betzel",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "lodash": "^4.17.1",
+    "request": "^2.78.0",
+    "throat": "^3.0.0",
+    "throttled-request": "^0.1.1",
+    "xml2json": "^0.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "nodemon": "^1.11.0"
+  }
+}
